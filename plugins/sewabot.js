@@ -10,9 +10,25 @@ let handler = async (m, { conn }) => {
   let d = await fetch(c).then(a => a.buffer())
   let prepare = await require('@adiwajshing/baileys').generateWAMessageFromContent(m.key.remoteJid,{listMessage:{
   title: `${await conn.getName(conn.user.jid)}`,
-  description: ` *𝐉𝐀𝐒𝐀 𝐑𝐔𝐍 𝐁𝐎𝐓 𝐓𝐈𝐍𝐆𝐆𝐀𝐋 𝐒𝐂𝐀𝐍\n𝐌𝐈𝐍𝐀𝐓? 𝐂𝐇𝐀𝐓 𝐖𝐀 𝐃𝐈𝐁𝐀𝐖𝐀𝐇*
+  description: ` *• SEWA BOT & UP TO PREMIUM •*
+  
+1. Grup / 30 Hari
+Rp. 10.000 Dana
+Rp. 10.000 GOPAY
+Rp. 10.000 QRIS
+Rp. 10.000 Pulsa
+2. Premium / 30 Hari
+Rp. 8.000 Dana
+Rp. 8.000 GOPAY
+Rp. 8.000 QRIS
+Rp. 10.000 Pulsa
+3. Premium + Grup / 30 Hari
+Rp. 15.000 Dana
+Rp. 15.000 GOPAY
+Rp. 15.000 QRIS
+Rp. 15.000 Pulsa
 
-☞𝑜𝑤𝑛𝑒𝑟 ❀wa.me/${owner[0]}✵
+𝑩𝑬𝑳𝑰 ? 𝑫𝑴 ☞ 𝑶𝑾𝑵𝑬𝑹 ❀wa.me/${owner[0]}
 
 *Owner ${conn.user.name}*
 `,
