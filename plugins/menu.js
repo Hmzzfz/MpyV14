@@ -38,7 +38,7 @@ const defaultMenu = {
   before: `
 ╔════════════════╗
 ╠➤👤𝙊𝙬𝙣𝙚𝙧 : ${global.ownername}
-╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : 𝔸ℕ𝔻ℝ𝔼
+╠➤💻𝘾𝙧𝙚𝙖𝙩𝙤𝙧 : 𝓐𝓝𝓓𝓡𝓔.𝓢
 ╠➤⏰𝙐𝙥𝙩𝙞𝙢𝙚 : %uptime
 ╠➤🗓️𝙏𝙖𝙣𝙜𝙜𝙖𝙡: %date
 ╚═══════╦════════╝
@@ -158,10 +158,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
     let url = `https://i.postimg.cc/nrMn3sMN/menu.jpg`
-    conn.sendHydrated(m.chat, text.trim(), '𓂀 𝔹𝕆𝕋 𝔹𝕐 ➢ 𝔸ℕ𝔻ℝ𝔼 𓂀', null, 'https://vt.tiktok.com/ZSR1Phosf/', '𓂀 𝕋𝕀𝕂𝕋𝕆𝕂 ℤ𝔼𝔼 𓂀', '', '', [
-      ['𝗚𝗥𝗨𝗣 𝗕𝗢𝗧', '/donasi'],
-      ['𝗝𝗔𝗦𝗔 𝗥𝗨𝗡', '/sewa'],
-      ['✿𝗢𝗪𝗡𝗘𝗥✿', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), '𓂀 𝓑𝓞𝓣 𝓑𝓨 ➢ 𝓐𝓝𝓓𝓡𝓔 𓂀', null, 'https://vt.tiktok.com/ZSR1Phosf/', '𓂀 𝑻𝑰𝑲𝑻𝑶𝑲 𝑶𝑾𝑵𝑬𝑹 𓂀', '', '', [
+      ['𝑮𝑹𝑼𝑷 𝑩𝑶𝑻', '/donasi'],
+      ['𝑺𝑬𝑾𝑨 𝑩𝑶𝑻', '/sewa'],
+      ['✿𝑶𝑾𝑵𝑬𝑹✿', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
